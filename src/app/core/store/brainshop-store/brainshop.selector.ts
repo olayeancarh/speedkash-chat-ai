@@ -11,7 +11,7 @@ export const getBrainShopLoading = createSelector(
 
 export const getBrainShopError = createSelector(getBrainShopState, state => state.error);
 
-export const getApprovedBrainShops = createSelector(
+export const getBrainShops = createSelector(
   getBrainShopState,
   state => state.brainshop,
 );

@@ -15,6 +15,10 @@ export const brainshopReducer = (state = initialBrainShopState, action: BrainSho
       return { ...state, isLoading: false, error: action.payload };
     }
 
+    case BrainShopActionTypes.ClearShop: {
+      return { ...state, brainshop: null };
+    }
+
     default: {
       return state;
     }

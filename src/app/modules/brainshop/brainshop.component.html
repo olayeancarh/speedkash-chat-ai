@@ -1,0 +1,7 @@
+<div class="flex flex-col p-5 w-full h-full">
+  <div class="flex" [ngClass]="reverse ? 'flex-col' : 'flex-col-reverse'">
+    <app-brainshop-question [message]="msg"></app-brainshop-question>
+    <app-brainshop-answer [answer]="brainshopResp"></app-brainshop-answer>
+  </div>
+  <app-brainshop-form (question)="submitRequest($event)"></app-brainshop-form>
+</div>

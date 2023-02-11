@@ -5,6 +5,8 @@ export enum BrainShopActionTypes {
   LoadBrainShopsResp = '[BrainShops] Load BrainShops',
   LoadBrainShopsRespSuccess = '[BrainShops] Load BrainShops Success',
   LoadBrainShopsRespFail = '[BrainShops] Load BrainShops Fail',
+
+  ClearShop = '[Shop] Clear Shop',
 }
 
 export class LoadBrainShopsResp implements Action {
@@ -22,7 +24,12 @@ export class LoadBrainShopsRespFail implements Action {
   constructor(public payload: any) {}
 }
 
+export class ClearShop implements Action {
+  readonly type = BrainShopActionTypes.ClearShop;
+}
+
 export type BrainShopActions =
   | LoadBrainShopsResp
   | LoadBrainShopsRespSuccess
-  | LoadBrainShopsRespFail;
+  | LoadBrainShopsRespFail
+  | ClearShop;

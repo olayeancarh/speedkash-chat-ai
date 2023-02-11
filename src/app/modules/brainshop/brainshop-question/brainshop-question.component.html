@@ -1,0 +1,8 @@
+<div class="" [ngClass]="slideup ? 'animate-slide-up' : ''">
+  <div *ngIf="message"
+    class="px-10 py-4 w-full lg:w-3/4 md:w-3/4 my-3 bg-white text-slate-500 text-2xl ml-auto rounded-full rounded-br-none">
+    <p>
+      {{ message ? message.msg : '' }}
+    </p>
+  </div>
+</div>

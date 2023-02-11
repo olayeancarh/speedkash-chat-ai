@@ -15,7 +15,7 @@ export class BrainshopService {
 
   getBrainsReply(params: Brainshop): Observable<BrainshopResp> {
     return this.http.get<any>(
-      `${this.baseUrl}?&uid=${params.uid}&msg=${params.msg}`
+      `${this.baseUrl}?&msg=${params.msg}`
     );
   }
 }

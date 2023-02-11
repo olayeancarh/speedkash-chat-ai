@@ -1,0 +1,8 @@
+<div class="px-10 py-4 absolute inset-x-0 bottom-0 w-full rounded-md">
+  <form class="bg-white shadow-md rounded p-2 mb-4" [formGroup]="brainShopForm" #brainShopNgForm="ngForm"
+    (keyup.enter)="getReply(brainShopNgForm)">
+    <input [formControlName]="'msg'"
+        class="shadow appearance-none border rounded w-full h-[70px] py-2 px-3 text-gray-700 text-2xl focus:outline-none focus:shadow-outline"
+        type="text" placeholder="Enter to send">
+  </form>
+</div>
